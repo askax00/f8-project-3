@@ -401,6 +401,7 @@ a {
 
 .member {
     margin-top: 85px;
+    padding-bottom: 85px;
 }
 
 .member-header {
@@ -478,4 +479,39 @@ a {
 
 .control-member__icon--next {
     rotate: 180deg;
+}
+
+.install {
+    margin-top: 180px;
+    margin-bottom: 85px;
+}
+
+.install-inner {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    background: #2e80ce;
+    border-radius: 4px;
+    padding: 0 70px;
+}
+
+.install__img {
+    display: block;
+    margin-top: -95px;
+}
+
+.install__heading {
+    width: 489px;
+    color: #fff;
+}
+
+.install__desc {
+    width: 586px;
+    color: #fff;
+}
+
+.install__row {
+    display: flex;
+    gap: 28px;
+    margin-top: 38px;
 }
