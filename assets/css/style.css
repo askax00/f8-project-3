@@ -54,7 +54,6 @@ a {
 }
 
 .section__desc {
-    width: 468px;
     margin-top: 18px;
     color: #575f66;
     font-size: 1.8rem;
@@ -486,7 +485,6 @@ a {
 
 .install {
     margin-top: 180px;
-    margin-bottom: 85px;
 }
 
 .install-inner {
@@ -520,8 +518,7 @@ a {
 }
 
 .news {
-    padding-top: 85px;
-    margin-bottom: 85px;
+    margin-top: 170px;
 }
 
 .news__inner {
@@ -598,4 +595,34 @@ a {
 
 .card__content {
     padding: 18px 22px 21px;
+}
+
+.appointment__inner {
+    background: #f6fbff;
+    margin-top: 170px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.appointment__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.appointment__heading::after {
+    display: block;
+    position: absolute;
+    content: " ";
+    background: #2e80ce;
+    width: 136px;
+    height: 2px;
+    bottom: -18px;
+}
+
+.appointment__desc {
+    width: 617px;
+    font-size: 1.6rem;
+    margin: 36px auto 38px;
 }
