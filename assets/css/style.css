@@ -22,6 +22,52 @@ body {
     margin: 0 auto;
 }
 
+.logo {
+    display: inline-flex;
+    font-size: 1rem;
+    position: relative;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2e80ce;
+}
+
+.logo__circle::after {
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+}
+
+.logo__text {
+    color: #fff;
+    text-align: right;
+    line-height: 1.5em;
+}
+
+.logo__brand {
+    display: block;
+    margin-left: 0.6em;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
 a {
     text-decoration: none;
 }
@@ -38,6 +84,7 @@ a {
     font-size: 1.8rem;
     line-height: var(--height);
     text-align: center;
+    border: none;
 }
 
 .btn:hover {
@@ -96,53 +143,6 @@ a {
     min-height: 100vh;
     background: var(--header-bg);
     padding-top: 30px;
-    padding-bottom: 110px;
-}
-
-.logo {
-    display: inline-flex;
-    font-size: 1rem;
-    position: relative;
-}
-
-.logo__circle::before,
-.logo__circle::after {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-}
-
-.logo__circle::before {
-    width: 3em;
-    height: 3em;
-    background: #2e80ce;
-}
-
-.logo__circle::after {
-    position: absolute;
-    top: 1.1em;
-    left: 1.1em;
-    width: 1.6em;
-    height: 1.6em;
-    background: #fff;
-}
-
-.logo__text {
-    color: #fff;
-    text-align: right;
-    line-height: 1.5em;
-}
-
-.logo__brand {
-    display: block;
-    margin-left: 0.6em;
-    font-size: 1.8em;
-    font-weight: 400;
-}
-
-.logo__brand--small {
-    font-size: 1.2em;
-    font-weight: 300;
 }
 
 .header-top {
@@ -259,7 +259,7 @@ a {
 }
 
 .services {
-    padding: 170px 0;
+    margin-top: 170px;
 }
 
 .services .section__heading,
@@ -340,6 +340,7 @@ a {
 
 .work {
     padding: 100px 0;
+    margin-top: 170px;
     background: #f6fbff;
 }
 
@@ -625,4 +626,125 @@ a {
     width: 617px;
     font-size: 1.6rem;
     margin: 36px auto 38px;
+}
+
+.footer {
+    background: #10375c;
+    margin-top: 170px;
+    padding: 100px 0 42px;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 77px;
+}
+
+.contact__desc {
+    color: #a9b3bb;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 22px;
+}
+
+.contact__heading {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    padding-bottom: 20px;
+}
+
+.footer__contact .contact__heading:last-of-type {
+    padding-top: 28px;
+}
+
+.contact__item {
+    display: inline-block;
+    color: #a9b3bb;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.footer__social a:first-child .social__icon {
+    color: #fff;
+}
+
+.footer__social a:not(:first-child) .social__icon {
+    color: #2e80ce;
+}
+
+.footer__social a:first-child {
+    background: #2e80ce;
+}
+
+.footer__social a:not(:first-child) {
+    background: #fff;
+}
+
+.subscribe__message {
+    width: 273px;
+}
+
+.footer__form {
+    display: flex;
+    gap: 12px;
+}
+
+.enter__email {
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #406181;
+    background: #10375c;
+}
+
+.subscribe {
+    font-family: "Open Sans";
+    min-width: 108px;
+    height: 46px;
+    color: #fff;
+    padding: 10px 21px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 4px;
+    line-height: 1.86;
+}
+
+.coppy__right {
+    color: #aab3ba;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+hr {
+    width: 1170px;
+    height: 1px;
+    background: #406181;
+    border: none;
+    margin: 18px 0 28px;
 }
